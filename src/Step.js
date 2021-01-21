@@ -7,7 +7,7 @@ const Step = (props) => {
         <div className='step'>
 
             Step: <input onChange = {(event) => {
-                if (props.stepValue >= 1 ) {
+                if (event.target.value >= 1 ) {
                     props.changeStepMth(+event.target.value)
                 }
             }}
